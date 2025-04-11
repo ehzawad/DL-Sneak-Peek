@@ -88,29 +88,24 @@ $
 এখন, আমরা **$A \times B$** এর গুণফল হিসাব করি:
 
 $$
-A \times B = \begin{pmatrix}
+A \times B = \left[ \begin{array}{ccc}
 1 & 0 \\
 0 & 1 \\
-1 & 1
-\end{pmatrix}
+1 & 1 \\
+\end{array} \right]
 \times
-\begin{pmatrix}
-1 & 2 & 3 \\
-4 & 5 & 6
-\end{pmatrix}
-=
-\begin{pmatrix}
-1 \times 1 + 0 \times 4 & 1 \times 2 + 0 \times 5 & 1 \times 3 + 0 \times 6 \\
-0 \times 1 + 1 \times 4 & 0 \times 2 + 1 \times 5 & 0 \times 3 + 1 \times 6 \\
-1 \times 1 + 1 \times 4 & 1 \times 2 + 1 \times 5 & 1 \times 3 + 1 \times 6
-\end{pmatrix}
-=
-\begin{pmatrix}
+\left[ \begin{array}{ccc}
 1 & 2 & 3 \\
 4 & 5 & 6 \\
-5 & 7 & 9
-\end{pmatrix}
+\end{array} \right]
+=
+\left[ \begin{array}{ccc}
+1 & 2 & 3 \\
+4 & 5 & 6 \\
+5 & 7 & 9 \\
+\end{array} \right]
 $$
+
 
 ### ধাপ ৩: মূল ম্যাট্রিক্সটি W পরিবর্তন করা
 এখন, পুরো মূল ম্যাট্রিক্স **W** আপডেট না করে, আপনি সংশোধিত ম্যাট্রিক্স ব্যবহার করবেন:
