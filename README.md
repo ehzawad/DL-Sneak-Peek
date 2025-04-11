@@ -35,6 +35,8 @@ If anyone get helped reading this It would be grateful for me
 |--- |--------------------------------------------------------------|--------|
 |01|২ বিট কোয়ান্টাইজেশন কি? এটা কি ভাবে কাজ করে? | [link](https://www.linkedin.com/pulse/llm-%25E0%25A7%25A8-%25E0%25A6%25AC%25E0%25A6%259F-%25E0%25A6%2595%25E0%25A6%25AF%25E0%25A6%25A8%25E0%25A6%259F%25E0%25A6%2587%25E0%25A6%259C%25E0%25A6%25B6%25E0%25A6%25A8-%25E0%25A6%2595-%25E0%25A6%258F%25E0%25A6%259F-%25E0%25A6%25AD%25E0%25A6%25AC-%25E0%25A6%2595%25E0%25A6%259C-%25E0%25A6%2595%25E0%25A6%25B0-mehadi-hasan-menon-163ac/?trackingId=Fj1iJgx%2BTRmDx2A52UyXtw%3D%3D)|
 |02|Model Alignment, Prompting, and In-Context Learning | [link](https://www.linkedin.com/pulse/llm-model-alignment-prompting-in-context-learning-mehadi-hasan-menon-a4swc/?trackingId=Fj1iJgx%2BTRmDx2A52UyXtw%3D%3D)|
+|02|LLM ফাইন-টিউন এ LoRA কেন দরকার এবং এটা কিভাবে কাজ করে?|[link](./llm/What%20is%20PEFT%20and%20how%20LoRA%20works.md)|
+
 
 ### Deep learning (`NLP`)
 |Part|                             Topic                            |Git   |Colab    |
@@ -42,7 +44,7 @@ If anyone get helped reading this It would be grateful for me
 |01|টোকেনাইজার কি এবং এটার বিভিন্ন প্রয়োগ | [link](./nlp/drive_into_tokenizer_part_1.ipynb) | [colab](https://bit.ly/31bh51g) |
 |02|টোকেনাইজার এর আরও কিছু ব্যবহার | [lin k](./nlp/drive_into_tokenizer_part_2.ipynb) | [colab](https://bit.ly/3exnsjn) |
 
-### ML Ops
+### MLOps
 |SL  |                             Topic                            | Link |
 |--- |--------------------------------------------------------------|----- |
 |01  | Rule of Machine Learning | [link](mlops/rules_of_ml.pdf) |
