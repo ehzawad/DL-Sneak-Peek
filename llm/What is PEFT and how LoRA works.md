@@ -2,7 +2,7 @@
 
 ## LLMs কীভাবে কাজ করে
 
-LLMs মডেলগুলি [বিশাল পরিমাণ ডেটা](https://commoncrawl.org/) থেকে ভাষার গঠন ও ব্যবহার শেখে। এগুলি [ট্রান্সফর্মার আর্কিটেকচারের](https://en.wikipedia.org/wiki/Transformer_(deep_learning_architecture)) উপর ভিত্তি করে তৈরি, যা শব্দগুলির মধ্যে সম্পর্ক বুঝতে সক্ষম। এই মডেলগুলি প্রথমে এই বিশাল সংখ্যক ডাটা দিয়ে pretrained হয় এবং তারপর নির্দিষ্ট কাজের জন্য ফাইন-টিউন করা হয়।​ [llama-3.1]((https://ai.meta.com/blog/meta-llama-3-1/) মডেল কে ১৫ trillion টোকেন দিয়ে train হয়েছে.
+LLMs মডেলগুলি [বিশাল পরিমাণ ডেটা](https://commoncrawl.org/) থেকে ভাষার গঠন ও ব্যবহার শেখে। এগুলি [ট্রান্সফর্মার আর্কিটেকচারের](https://en.wikipedia.org/wiki/Transformer_(deep_learning_architecture)) উপর ভিত্তি করে তৈরি, যা শব্দগুলির মধ্যে সম্পর্ক বুঝতে সক্ষম। এই মডেলগুলি প্রথমে এই বিশাল সংখ্যক ডাটা দিয়ে pretrained হয় এবং তারপর নির্দিষ্ট কাজের জন্য ফাইন-টিউন করা হয়।​ [llama-3.1](https://ai.meta.com/blog/meta-llama-3-1/) মডেল কে ১৫ trillion টোকেন দিয়ে train হয়েছে.
 
 ## ফাইন-টিউনিংয়ের চ্যালেঞ্জ
 
@@ -54,13 +54,13 @@ $W' = W + A \times B$
 
 আপনার ম্যাট্রিক্স যদি এই রকম হয়,
 
-$
+$$
 W = \begin{pmatrix}
 1 & 2 & 3 \\
 4 & 5 & 6 \\
 7 & 8 & 9
 \end{pmatrix}
-$
+$$
 
 ### ধাপ ১: Low Rank অ্যাপ্রক্সিমেশন
 
@@ -71,7 +71,7 @@ $
 
 উদাহরণস্বরূপ, ধরুন:
 
-$
+$$
 A = \begin{pmatrix}
 1 & 0 \\
 0 & 1 \\
@@ -82,57 +82,57 @@ B = \begin{pmatrix}
 1 & 2 & 3 \\
 4 & 5 & 6
 \end{pmatrix}
-$
+$$
 
 ### ধাপ ২: **A** এবং **B** এর গুণফল হিসাব করা
+
 এখন, আমরা **$A \times B$** এর গুণফল হিসাব করি:
 
 $$
-A \times B = \left[ \begin{array}{ccc}
+A \times B = \begin{pmatrix}
 1 & 0 \\
 0 & 1 \\
 1 & 1 \\
-\end{array} \right]
+\end{pmatrix}
 \times
-\left[ \begin{array}{ccc}
+\begin{pmatrix}
 1 & 2 & 3 \\
 4 & 5 & 6 \\
-\end{array} \right]
-=
-\left[ \begin{array}{ccc}
+\end{pmatrix}
+= \begin{pmatrix}
 1 & 2 & 3 \\
 4 & 5 & 6 \\
 5 & 7 & 9 \\
-\end{array} \right]
+\end{pmatrix}
 $$
+
 
 
 ### ধাপ ৩: মূল ম্যাট্রিক্সটি W পরিবর্তন করা
+
 এখন, পুরো মূল ম্যাট্রিক্স **W** আপডেট না করে, আপনি সংশোধিত ম্যাট্রিক্স ব্যবহার করবেন:
 
-$
-W' = W + A \times B
-$
+$W' = W + A \times B$
 
 এখানে:
+
 $$
-W' = \left( \begin{array}{ccc}
+W' = \begin{pmatrix}
 1 & 2 & 3 \\
 4 & 5 & 6 \\
-7 & 8 & 9 \\
-\end{array} \right)
+7 & 8 & 9 
+\end{pmatrix}
 +
-\left( \begin{array}{ccc}
+\begin{pmatrix}
 1 & 2 & 3 \\
 4 & 5 & 6 \\
-5 & 7 & 9 \\
-\end{array} \right)
-=
-\left( \begin{array}{ccc}
+5 & 7 & 9 
+\end{pmatrix}
+= \begin{pmatrix}
 2 & 4 & 6 \\
 8 & 10 & 12 \\
-12 & 15 & 18 \\
-\end{array} \right)
+12 & 15 & 18
+\end{pmatrix}
 $$
 
 ### ধাপ ৪: Low Rank ম্যাট্রিসের fine-tuning
