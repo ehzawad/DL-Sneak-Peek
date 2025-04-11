@@ -18,7 +18,7 @@ LLMs সাধারণত কয়েক বিলিয়ন প্যারা
 - কম সময় লাগে ট্রেনিংয়ে
 - কম ডেটাও দরকার হয়
 
-Most used way to for the PEFT is LoRa. Let see how LoRa works
+Most common way for the PEFT is LoRA. Let see how LoRA works
 
 ## LoRA (Low-Rank Adaptation) কীভাবে সাহায্য করে
 
@@ -120,13 +120,13 @@ $$
 W' = \begin{pmatrix}
 1 & 2 & 3 \\
 4 & 5 & 6 \\
-7 & 8 & 9 
+7 & 8 & 9
 \end{pmatrix}
 +
 \begin{pmatrix}
 1 & 2 & 3 \\
 4 & 5 & 6 \\
-5 & 7 & 9 
+5 & 7 & 9
 \end{pmatrix}
 = \begin{pmatrix}
 2 & 4 & 6 \\
@@ -150,7 +150,7 @@ Fine-tuning এর সময়, মূল **W** স্থির থাকে, এ�
 ## Referances
 - [Speech and Language Processing - PEFT](https://web.stanford.edu/~jurafsky/slp3/10.pdf)
 - [Llama-3.1 - One of most capable opensource models](https://ai.meta.com/blog/meta-llama-3-1/)
-- [Transformer](https://en.wikipedia.org/wiki/Transformer_(deep_learning_architecture))
-- [CC Datasets](https://commoncrawl.org/)
-- [PEFT](https://huggingface.co/docs/peft/en/index)
-- [ব্যাকপ্রপাগেশন](https://en.wikipedia.org/wiki/Backpropagation)
+- [What is Transformer](https://en.wikipedia.org/wiki/Transformer_(deep_learning_architecture))
+- [Common Crawl Datasets](https://commoncrawl.org/)
+- [PEFT with example](https://huggingface.co/docs/peft/en/index)
+- [ব্যাকপ্রপাগেশন how it works](https://en.wikipedia.org/wiki/Backpropagation)
