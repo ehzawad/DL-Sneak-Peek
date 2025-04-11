@@ -1,6 +1,6 @@
 # Deep learning sneak peek
-I try to explain various important terms of deep learning and machine learning. 
-I will write this sort of tutorial for helping myself to build a clear understanding. 
+I try to explain various important terms of deep learning and machine learning.
+I will write this sort of tutorial for helping myself to build a clear understanding.
 If anyone get helped reading this It would be grateful for me
 
 ### Deep learning (`Basics`)
@@ -17,7 +17,7 @@ If anyone get helped reading this It would be grateful for me
 |--- |--------------------------------------------------------------|---- |--------|
 |01| ইমেজ ডাটা লোডিং, ফ্লাওয়ার ডাটাসেট, প্লট ইমেজ | [link](./vision/dl_computer_vision_part_1.ipynb) | [colab](https://bit.ly/2WEzPUe)|
 |02| ইমেজ ডাটা পাইপলাইন, Keras ImageDataGenerator, ওয়ান-হট এনকোডিং | [link](./vision/dl_computer_vision_part_2.ipynb)|[colab](https://bit.ly/2ygaeHO)|
-|03| ইমেজ ডাটা পাইপলাইন, tf.data , map ফাংশনের ব্যাবহার | [link](./vision/dl_computer_vision_part_3.ipynb) | [colab](https://bit.ly/2AF3zYy) | 
+|03| ইমেজ ডাটা পাইপলাইন, tf.data , map ফাংশনের ব্যাবহার | [link](./vision/dl_computer_vision_part_3.ipynb) | [colab](https://bit.ly/2AF3zYy) |
 |04| tf.data ও ImageDataGenerator এর মধ্যে তুলনা, ট্রেনিং টাইম স্পীড আপ করা, ডাটা ক্যাশিং | [link](./vision/dl_computer_vision_part_4.ipynb)|[colab](https://bit.ly/2ZqZzW3)
 |05| ইমেজ ডাটা পাইপলাইন tf.keras.utils.Sequence | [link](./vision/dl_computer_vision_part_5.ipynb) | [colab](https://colab.research.google.com/drive/12ACmzAawasOq_lEJU23s0DatOe8Qx9W2?usp=sharing)|
 |07| ফ্লাওয়ার ইমেজ ক্লাসিফিকেশন, সাবক্লাস মডেল, tf.keras.utils.Sequence | [link](./vision/dl_computer_vision_part_6.ipynb)|[colab](https://colab.research.google.com/drive/11f0B03QGshbNCiUhmrlYggxoqfx1qkfk?usp=sharing)|
@@ -28,6 +28,12 @@ If anyone get helped reading this It would be grateful for me
 |--- |--------------------------------------------------------------|:----:|:--------:|
 |01| অডিও ফাইল রিড, ফিচার(FT, STFT, Spectrogram, MFCC) ভিজুয়ালাইজ | [link](./audio/audio_feature_visualization.ipynb) | [colab](https://bit.ly/3VIZEP7) |
 |02| স্পিচ টু টেক্সট সিস্টেম ডিজাইন এ কেন আমরা স্পেক্টোগ্রাম ব্যবহার করি? | [link](https://www.linkedin.com/post/edit/7019349990099603456/)| - |
+|03| অডিও কোডেক, নিউরাল অডিও কোডেক, এবং ডিপ লার্নিং | [link](https://www.linkedin.com/pulse/audio-codec-how-we-use-deep-learning-mehadi-hasan-menon-8nqmc/?trackingId=Fj1iJgx%2BTRmDx2A52UyXtw%3D%3D)| - |
+
+### LLMs
+|Part|                             Topic                            |Link    |
+|--- |--------------------------------------------------------------|--------|
+|01|
 
 ### Deep learning (`NLP`)
 |Part|                             Topic                            |Git   |Colab    |
